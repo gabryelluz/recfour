@@ -43,8 +43,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #00ff00;
     transition: .6s;
-    background-color: #ffffff;
-    padding: 8px;
 }
 
 /* Seção de Introdução */
