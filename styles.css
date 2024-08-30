@@ -134,19 +134,22 @@ footer {
 
 /* Página "Reviews" */
 .game-reviews,
-.game-item{
+.game-item,
+.about{
     padding: 50px 20px;
     text-align: center;
 }
 
 .game-reviews h2,
-.game-item h2{
+.game-item h2,
+.about h2{
     color: #00ff00;
     margin-bottom: 30px;
 }
 
 .review,
-.game{
+.game,
+.about p{
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -196,7 +199,7 @@ footer {
 .contact button {
     align-self: flex-end;
     background-color: #2a2a2a;
-    color: #28cd28 !important;
+    color: #28cd28;
     border: none;
     padding: 7px 15px;
     font-size: .8rem;
