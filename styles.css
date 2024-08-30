@@ -1,26 +1,37 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo do corpo */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #f0f0f0;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #e0e0e0;
+    background-color: #000000;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Container principal */
+main {
+    flex: 1;
+}
+
+/* Cabeçalho e Navegação */
 header {
-    background-color: #0f3460;
+    background-color: #0a0a0a;
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #e94560;
+    border-bottom: 2px solid #00ff00;
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #e94560;
+    color: #00ff00;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -36,20 +47,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f0f0f0;
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #e94560;
+    color: #00ff00;
 }
 
 /* Botões */
 button.cta-button {
-    background-color: #e94560;
-    color: #f0f0f0;
+    background-color: #00ff00;
+    color: #000000;
     border: none;
     padding: 15px 30px;
     font-size: 1rem;
@@ -61,7 +72,7 @@ button.cta-button {
 }
 
 button.cta-button:hover {
-    background-color: #903749;
+    background-color: #33ff33;
     transform: scale(1.05);
 }
 
@@ -73,11 +84,13 @@ button.cta-button:hover {
 
 .intro h2 {
     font-size: 2rem;
+    color: #00ff00;
     margin-bottom: 20px;
 }
 
 .intro p {
     font-size: 1.2rem;
+    color: #e0e0e0;
     margin-bottom: 30px;
 }
 
@@ -90,6 +103,7 @@ button.cta-button:hover {
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
+    color: #00ff00;
 }
 
 .game-list, .review-item {
@@ -99,20 +113,21 @@ button.cta-button:hover {
 }
 
 .game-item, .review-item {
-    background-color: #16213e;
+    background-color: #1a1a1a;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .game-item h3, .review-item h3 {
-    color: #e94560;
+    color: #00ff00;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .game-item p, .review-item p {
     font-size: 1rem;
+    color: #e0e0e0;
 }
 
 /* Formulário de Contato */
@@ -127,6 +142,7 @@ button.cta-button:hover {
 .contact label {
     font-size: 1rem;
     font-weight: bold;
+    color: #e0e0e0;
 }
 
 .contact input, .contact textarea {
@@ -134,8 +150,8 @@ button.cta-button:hover {
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    background-color: #0f3460;
-    color: #f0f0f0;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
 }
 
 .contact button {
@@ -144,22 +160,20 @@ button.cta-button:hover {
 
 /* Rodapé */
 footer {
-    background-color: #0f3460;
+    background-color: #0a0a0a;
     padding: 20px;
     text-align: center;
-    border-top: 2px solid #e94560;
+    border-top: 2px solid #00ff00;
     position: relative;
-}
-
-footer p {
-    font-size: 0.9rem;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Relógio */
 #clock {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #f0f0f0;
+    color: #00ff00;
 }
 
 /* Responsividade */
@@ -171,5 +185,4 @@ footer p {
     nav ul li {
         margin: 0 25px;
     }
-}
-  
+    }
