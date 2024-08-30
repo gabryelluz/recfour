@@ -217,13 +217,12 @@ footer {
 
 /*relógio*/
 #clock {
-    font-family: 'Arial', sans-serif;
     font-size: 24px;
-    color: #000; /* Texto preto */
-    background-color: #fff; /* Fundo branco */
+    color: #fff;
+    background-color: #fff0;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    width: 100px; /* Ajuste conforme necessário */
-    margin: 0 auto; /* Centraliza no rodapé */
+    width: 100px; 
+    margin: 0 auto;
 }
