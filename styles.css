@@ -1,118 +1,181 @@
-/* CSS atualizado */
-
+/* Estilos Globais */
 body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-/* Estilo da barra de navegação */
-nav {
-    background-color: #000000;
-    border-bottom: 3px solid #00ff00;
-    color: #ffffff;
+/* Cabeçalho */
+header {
+    background-color: #111111;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px;
+    border-bottom: 2px solid #00FF00; /* Linha verde neon */
 }
 
-nav a {
-    color: #ffffff;
-    padding: 14px 20px;
+header h1 {
+    color: #00FF00; /* Verde neon */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #111111;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    text-transform: uppercase;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #00ff00;
+nav ul li a:hover {
+    color: #00FF00; /* Hover verde neon */
 }
 
-/* Título principal */
-h1 {
-    color: #00ff00;
+/* Seção Principal */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #00FF00; /* Verde neon */
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-/* Botão principal */
-.button-main {
-    display: block;
-    width: 200px;
-    margin: 30px auto;
-    padding: 15px;
-    background-color: #00ff00;
+main p {
+    line-height: 1.6;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #00FF00; /* Verde neon */
     color: #000000;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-}
-
-.button-main:hover {
-    background-color: #ffffff;
-}
-
-/* Conteúdo principal */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.container p {
-    margin: 20px 0;
-    font-size: 18px;
-}
-
-/* Seção específica para Reviews */
-.review-section {
-    background-color: #222222;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.review-section h2 {
-    color: #00ff00;
-    margin-bottom: 10px;
-}
-
-.review-section p {
     margin: 10px 0;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Estilização das seções de Jogos */
-.game-section {
-    background-color: #222222;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.btn:hover {
+    background-color: #00CC00; /* Verde mais escuro */
+    transform: scale(1.05);
 }
 
-.game-section h2 {
-    color: #00ff00;
-    margin-bottom: 10px;
-}
-
-/* Ajuste das margens da página 'Sobre' */
-.about-section {
-    padding: 20px;
-    margin-top: 20px; 
-    background-color: #222222;
-    border-radius: 10px;
-}
-
-/* Rodapé fixo */
+/* Rodapé */
 footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #111111;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
-    border-top: 3px solid #00ff00;
-    position: fixed;
+    color: #FFFFFF;
+    border-top: 2px solid #00FF00; /* Linha verde neon */
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
+}
+
+/* Seções Específicas */
+#clock {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+    color: #00FF00; /* Verde neon */
+}
+
+/* Cartões de Conteúdo */
+.card {
+    background-color: #222222; /* Fundo preto suave */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Sombra verde neon */
+}
+
+.card h3 {
+    color: #00FF00; /* Verde neon */
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #CCCCCC;
+}
+
+/* Layout Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
     }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 20px 10px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 30px 15px;
+    }
+    
+    .card {
+        padding: 18px;
+    }
+}
+
+/* Modo Noturno */
+.night-mode {
+    background-color: #000000;
+    color: #CCCCCC;
+}
+
+.night-mode header, 
+.night-mode footer {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.night-mode .btn {
+    background-color: #333333;
+    color: #00FF00;
+}
+
+.night-mode .btn:hover {
+    background-color: #555555;
+    color: #00FF00;
+}
