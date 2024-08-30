@@ -44,16 +44,38 @@ nav ul li a:hover {
     color: #00ff00;
 }
 
-/* Estilo para o rodapé */
-footer {
-    background-color: #000;
-    color: #fff;
+/* Seção de Introdução */
+.intro {
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    border-top: 3px solid #00ff00;
+    padding: 50px 20px;
+}
+
+.button-main:hover {
+    background-color: #ffffff;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+/* Conteúdo principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+    
+.container p {
+    margin: 20px 0;
+    font-size: 18px;
 }
 
 /* Estilização das seções de Jogos */
@@ -131,4 +153,16 @@ footer {
 
 .review p {
     color: #bbb;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 3px solid #00ff00;
 }
