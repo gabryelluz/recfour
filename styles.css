@@ -1,188 +1,118 @@
-/* Reset básico */
-* {
+/* CSS atualizado */
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo do corpo */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #e0e0e0;
-    background-color: #000000;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Container principal */
-main {
-    flex: 1;
-}
-
-/* Cabeçalho e Navegação */
-header {
-    background-color: #0a0a0a;
-    padding: 20px;
+/* Estilo da barra de navegação */
+nav {
+    background-color: #000000;
+    border-bottom: 3px solid #00ff00;
+    color: #ffffff;
     text-align: center;
-    border-bottom: 2px solid #00ff00;
+    padding: 10px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    color: #00ff00;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-nav ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
+nav a {
+    color: #ffffff;
+    padding: 14px 20px;
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: #00ff00;
 }
 
-/* Botões */
-button.cta-button {
+/* Título principal */
+h1 {
+    color: #00ff00;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Botão principal */
+.button-main {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 15px;
     background-color: #00ff00;
     color: #000000;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-transform: uppercase;
-}
-
-button.cta-button:hover {
-    background-color: #33ff33;
-    transform: scale(1.05);
-}
-
-/* Seção de Introdução */
-.intro {
     text-align: center;
-    padding: 50px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.intro h2 {
-    font-size: 2rem;
-    color: #00ff00;
+.button-main:hover {
+    background-color: #ffffff;
+}
+
+/* Conteúdo principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Seção específica para Reviews */
+.review-section {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.intro p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    margin-bottom: 30px;
-}
-
-/* Seção de Jogos e Reviews */
-.games, .reviews {
-    padding: 50px 20px;
-}
-
-.games h2, .reviews h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
+.review-section h2 {
     color: #00ff00;
-}
-
-.game-list, .review-item {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.game-item, .review-item {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.game-item h3, .review-item h3 {
-    color: #00ff00;
-    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.game-item p, .review-item p {
-    font-size: 1rem;
-    color: #e0e0e0;
+.review-section p {
+    margin: 10px 0;
 }
 
-/* Formulário de Contato */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #e0e0e0;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #0a0a0a;
-    color: #e0e0e0;
-}
-
-.contact button {
-    align-self: flex-end;
-}
-
-/* Rodapé */
-footer {
-    background-color: #0a0a0a;
+/* Estilização das seções de Jogos */
+.game-section {
+    background-color: #222222;
     padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-section h2 {
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+/* Ajuste das margens da página 'Sobre' */
+.about-section {
+    padding: 20px;
+    margin-top: 20px; 
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+/* Rodapé fixo */
+footer {
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
-    border-top: 2px solid #00ff00;
-    position: relative;
+    padding: 10px;
+    border-top: 3px solid #00ff00;
+    position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Relógio */
-#clock {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #00ff00;
-}
-
-/* Responsividade */
-@media (min-width: 768px) {
-    .game-list, .review-item {
-        flex-direction: row;
-    }
-
-    nav ul li {
-        margin: 0 25px;
-    }
     }
