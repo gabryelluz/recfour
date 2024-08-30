@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0f3460;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e94560;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #e94560;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e94560;
+}
+
+/* Botões */
+button.cta-button {
+    background-color: #e94560;
+    color: #f0f0f0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+button.cta-button:hover {
+    background-color: #903749;
+    transform: scale(1.05);
+}
+
+/* Seção de Introdução */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Seção de Jogos e Reviews */
+.games, .reviews {
+    padding: 50px 20px;
+}
+
+.games h2, .reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.game-list, .review-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.game-item, .review-item {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.game-item h3, .review-item h3 {
+    color: #e94560;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.game-item p, .review-item p {
+    font-size: 1rem;
+}
+
+/* Formulário de Contato */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #0f3460;
+    color: #f0f0f0;
+}
+
+.contact button {
+    align-self: flex-end;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0f3460;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #e94560;
+    position: relative;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Relógio */
+#clock {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .game-list, .review-item {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+    }
+}
+  
