@@ -57,6 +57,10 @@ footer {
 }
 
 /* Estilização das seções de Jogos */
+.games {
+    text-align: center;
+}
+
 .games h2, .reviews h2 {
     color: #00ff00;
     margin: 30px 0;
