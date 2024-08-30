@@ -64,6 +64,7 @@ footer {
 }
 
 .game-list, .review-item {
+    color: #bbb;
     display: flex;
     flex-direction: column;
     gap: 30px;
