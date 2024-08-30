@@ -12,6 +12,11 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     background-color: #000;
     padding: 10px 0;
@@ -73,7 +78,7 @@ nav ul li a:hover {
     color: #e0e0e0;
     margin-bottom: 30px;
 }
-    
+
 .container p {
     margin: 20px 0;
     font-size: 18px;
@@ -82,7 +87,6 @@ nav ul li a:hover {
 /* Botões */
 button.cta-button {
     background-color: #2a2a2a;
-    color: #00ff00;
     border: none;
     padding: 15px 30px;
     font-size: 1rem;
@@ -92,6 +96,9 @@ button.cta-button {
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-transform: uppercase;
 }
+
+.cta-button a {
+    color: #00ff00;}
 
 button.cta-button:hover {
     color: #2a2a2a;
@@ -117,7 +124,8 @@ footer {
     text-align: center;
 }
 
-.games h2, .reviews h2 {
+.games h2,
+.reviews h2 {
     color: #00ff00;
     margin: 30px 0;
     font-size: 2rem;
@@ -125,27 +133,31 @@ footer {
     text-align: center;
 }
 
-.game-list, .review-item {
+.game-list,
+.review-item {
     color: #bbb;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.game-item, .review-item {
+.game-item,
+.review-item {
     background-color: #333;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.game-item h3, .review-item h3 {
+.game-item h3,
+.review-item h3 {
     color: #00ff00;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.game-item p, .review-item p {
+.game-item p,
+.review-item p {
     font-size: 1rem;
 }
 
@@ -158,7 +170,8 @@ footer {
     border-radius: 10px;
 }
 
-.sobre-container h1, .sobre-container p {
+.sobre-container h1,
+.sobre-container p {
     margin-bottom: 20px;
 }
 
