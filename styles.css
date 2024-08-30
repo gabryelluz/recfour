@@ -14,7 +14,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #00ff00;
 }
 
 header {
@@ -87,6 +87,7 @@ nav ul li a:hover {
 /* Botões */
 button.cta-button {
     background-color: #2a2a2a;
+    color: #28cd28 !important;
     border: none;
     padding: 15px 30px;
     font-size: 1rem;
@@ -97,13 +98,8 @@ button.cta-button {
     text-transform: uppercase;
 }
 
-.cta-button a {
-    color: #00ff00;}
-
 button.cta-button:hover {
     color: #2a2a2a;
-    background-color: #28cd28;
-    transition: .6s;
     transform: scale(1.05);
 }
 
